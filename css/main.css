@@ -135,7 +135,7 @@ body, h1, h2, h3, h4, p, a {
 	}
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
 	.banner {
 	background-image: url(../images/background.jpg);
 	}
