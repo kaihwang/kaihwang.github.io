@@ -51,14 +51,14 @@ body, h1, h2, h3, h4, p, a {
 
 .navbar {
 	border: none;
-	background: rgba(81, 164, 253, 0.3);
+	background: rgba(49, 59, 75, 1);
 }
 
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
   vertical-align: top;
-  width: 400px;
+  width: 500px;
   margin-left:-5%;
 }
 
@@ -123,30 +123,14 @@ body, h1, h2, h3, h4, p, a {
 	background-size: cover;
 }
 
-@media (max-width: 767px) {
-	.banner {
-	background-image: url(../images/background-xs.jpg);
-	}
-}
 
-@media (min-width: 768px) {
-	.banner {
-	background-image: url(../images/background-sm.jpg);
-	}
-}
-
-@media (min-width: 1024px) {
-	.banner {
-	background-image: url(../images/background.jpg);
-	}
-}
 
 .nametext {
 	font-family: "HelveticaNeueThin", "HelveticaNeue-Thin", "Helvetica Neue Thin", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Arial", sans-serif; font-weight:200; font-stretch:normal;
 	margin-top:8vh;
 	padding-bottom: 1.5vh;
 	width: auto;
-	color: white;
+	color: black;
 	/*background-color: rgba(81, 164, 253, 0.3);*/
 }
 
@@ -170,11 +154,11 @@ body, h1, h2, h3, h4, p, a {
 
 .footer p {
 	text-align: center;
-	color: white;
+	color: black;
 }
 
 .footer a {
 	float:right;
 	margin-right:10px;
-	color:white;
+	color:black;
 }
