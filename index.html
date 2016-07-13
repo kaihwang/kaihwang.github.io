@@ -12,7 +12,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap.theme.min.css" ref="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -26,67 +26,79 @@
       $(".loader").fadeOut("slow");})
     </script>
   </head>
-  <body>
+  <body class="banner">
     <div class="loader"></div>
-    <header>
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">
-              <img alt="Kai Hwang" src="images/logo.png" style="width:85%;margin:-20%;">
-            </a>
+
+
+    <div class="container home" style="margin-top:0%;margin-bottom:8%;">
+      <h2 style="color:white;">Kai Hwang, PhD
+      <br>Postdoctoral Fellow, Cognitive Neuroscience 
+      <br>University of California, Berkeley</h2>
+      <a href="about.html"><li class="col-xs-12 col-sm-6 block" style="background:rgba(164,165,168, 0.8);">
+        <h1 style="display:block;border-bottom:3px solid rgba(236,96,79,0.9);">Who Am I</h1>
+      </li></a>
+
+      <li class="col-xs-12 col-sm-6 block" style="background:rgba(164,165,168, 0.8);background-image:url('images/face2.jpg')">
+        <h1></h1>
+      </li>
+
+      <li class="col-xs-12 col-sm-6 block" style="background:rgba(255,255,255,0.8);padding:0;">
+        <!-- Start Carousel -->
+        <div id="carousel-example-generic" class=" carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="images/Tha.png" alt="..." style="height:200px;width:auto;object-fit: contain;">
+            </div>
+            <div class="item">
+              <img src="images/JN_Rev_Fig5.png" alt="..." style="height:200px;width:auto;object-fit: contain;">
+            </div>
+            <div class="item">
+              <img src="images/MTD.png" alt="..." style="height:200px;width:auto;object-fit: contain;">
+            </div>
+            <div class="item">
+              <img src="images/JN_Rev_Fig3.png" alt="..." style="height:200px;width:auto;object-fit: contain;">
+            </div>
+            <div class="item">
+              <img src="images/hub.png" alt="..." style="height:200px;width:auto;object-fit: contain;">
+            </div>
+            <div class="item">
+              <img src="images/Fig4.png" alt="..." style="height:200px;width:auto;object-fit: contain;">
+            </div>
           </div>
 
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li class="link1" class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
-              <li class="link2"><a href="research.html">Research</a></li>
-              <li class="link3"><a href="publications.html">Publications</a></li>
-              <li class="link4"><a href="resources.html">Resources</a></li>
-              <li class="link5"><a href="contact.html">Contact</a></li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
-    </header>
-
-
-
-    <div class="banner">
-      <div class="container">
-        <div class="col-xs-12 col-md-6 nametext">
-          <h1>Kai Hwang, PhD
-          <br>Postdoctoral Fellow, Cognitive Neuroscience
-          <br>Helen Wills Neuroscience Institute
-          <br>University of California, Berkeley</h1>
-          <h4>Welcome, </h4>
-          <h4 >I am a postdoctoral fellow working in the <a href="http://despolab.berkeley.edu/">D’Esposito Cognitive Neuroscience Lab</a> at the <a href="http://neuroscience.berkeley.edu/">Helen Wills Neuroscience Institute</a>, UC Berkeley. My research focuses on brain network mechanisms of cognitive control. I also have a strong interest in researching how brain connectivity develops from childhood to adolescence. I am funded by an NIH NRSA F32 postdoctoral fellowship. </h4>
-          <h4>Before coming to Berkeley, I received my PhD in <a href="http://www.psychology.pitt.edu/cognitive-neuroscience-concentration">Cognitive Psychology and Cognitive Neuroscience</a> from the University of Pittsburgh, working with <a href="https://lncd.pitt.edu">Dr. Beatriz Luna</a>. During my PhD study, I was a member of the <a href="http://www.cnbc.cmu.edu/">Center for the Neural Basis of Cognition</a>, a joint research training program between Pitt and CMU.</h4>
-          <h4>Before that, I was a Master's student with <a href="http://www.sci.sdsu.edu/bdil/web/BDIL.html">Dr. Ralph-Axel Mueller</a> at San Diego State University. </h4>
-          <h4>I was born and raised in Taiwan.</h4>  	
-          <h4 >You can learn more about my work by visiting the "research" or "publication" page. </h4>
-          <br/>	
-          <br/>	
-          <br/>	
-        </div>
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        <!-- End Carousel -->
+      </li>
+      <a href="research.html"><li class="col-xs-12 col-sm-6 block" style="background:rgba(164,165,168, 0.8);">
+        <h1 style="border-bottom:3px solid rgba(81,164,253,0.9)">What I Do</h1>
+      </li></a>
+    </div>
+    <div class="container">
       </div>
 
-    </div>
-
-    </br> 
-    </br>
-
-   <div class="footer">
-      <p>© Kai Hwang 2016<p>
+    <div class="footer" style="opacity:1">
+      <p>© Kai Hwang 2016 | Design by <a href="http://ashtonteng.com">Ashton Teng</a><p>
     </div> 
+
     <!-- Latest compiled and minified JavaScript -->
     <script src="js/bootstrap.min.js"></script>
   </body>
