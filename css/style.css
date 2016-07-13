@@ -196,7 +196,9 @@ body, h1, h2, h3, h4, p, a {
 .carousel-control.left, .carousel-control.right {
     background-image: none
 }
-
+.carousel-inner > .item > img, .carousel-inner > .item > a > img{
+    margin:auto;
+}
 .footer p {
 	text-align: center;
 	color: white;
