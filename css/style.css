@@ -95,23 +95,23 @@ body, h1, h2, h3, h4, p, a {
 
 
 .navbar .navbar-nav li.link1 {
-	background-color:#6abe31;
+	background-color:#003153;
 }
 
 .navbar .navbar-nav li.link1 a:hover {
-	background-color:#569b28;
+	background-color:#448ad4;
 }
 
 .navbar .navbar-nav li.link2 {
-	background-color:#f5c53d;
+	background-color:#003153;
 }
 
 .navbar .navbar-nav li.link2 a:hover {
-	background-color:#d8ae35;
+	background-color:#448ad4;
 }
 
 .navbar .navbar-nav li.link3 {
-	background-color:#51a4fd;
+	background-color:#003153;
 }
 
 .navbar .navbar-nav li.link3 a:hover {
@@ -119,19 +119,19 @@ body, h1, h2, h3, h4, p, a {
 }
 
 .navbar .navbar-nav li.link4 {
-	background-color:#ec604f;
+	background-color:#003153;
 }
 
 .navbar .navbar-nav li.link4 a:hover {
-	background-color:#c55042;
+	background-color:#448ad4;
 }
 
 .navbar .navbar-nav li.link5 {
-	background-color:#7685c0;
+	background-color:#003153;
 }
 
 .navbar .navbar-nav li.link5 a:hover {
-	background-color:#5c6898;
+	background-color:#448ad4;
 }
 
 .banner {
