@@ -95,43 +95,43 @@ body, h1, h2, h3, h4, p, a {
 
 
 .navbar .navbar-nav li.link1 {
-	background-color:#003153;
+	background-color:#6baed6;
 }
 
 .navbar .navbar-nav li.link1 a:hover {
-	background-color:#448ad4;
+	background-color:#003153;
 }
 
 .navbar .navbar-nav li.link2 {
-	background-color:#003153;
+	background-color:#4292c6;
 }
 
 .navbar .navbar-nav li.link2 a:hover {
-	background-color:#448ad4;
+	background-color:#003153;
 }
 
 .navbar .navbar-nav li.link3 {
-	background-color:#003153;
+	background-color:#2171b5;
 }
 
 .navbar .navbar-nav li.link3 a:hover {
-	background-color:#448ad4;
+	background-color:#003153;
 }
 
 .navbar .navbar-nav li.link4 {
-	background-color:#003153;
+	background-color:#08519c;
 }
 
 .navbar .navbar-nav li.link4 a:hover {
-	background-color:#448ad4;
-}
-
-.navbar .navbar-nav li.link5 {
 	background-color:#003153;
 }
 
+.navbar .navbar-nav li.link5 {
+	background-color:#08306b;
+}
+
 .navbar .navbar-nav li.link5 a:hover {
-	background-color:#448ad4;
+	background-color:#003153;
 }
 
 .banner {
