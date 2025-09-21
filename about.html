@@ -5,7 +5,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SL5428RBVK"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);} 
+      function gtag(){ dataLayer.push(arguments); }
       gtag('js', new Date());
       gtag('config', 'G-SL5428RBVK');
     </script>
@@ -15,28 +15,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Hwang Lab">
     <meta name="keywords" content="Hwang Lab">
-
     <title>Hwang Lab — About</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-    <!-- Bootstrap 3 -->
+    <!-- Security: tight CSP allowing self + GA -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+               script-src 'self' 'unsafe-inline' https://www.googletagmanager.com;
+               connect-src 'self' https://www.google-analytics.com;
+               img-src 'self' data: https:;
+               style-src 'self' 'unsafe-inline';
+               font-src 'self' data:;
+               frame-ancestors 'self';">
+
+    <!-- Local CSS (preserves banners/theme) -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap.theme.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
     <style>
-      /* Keep the image styling if you add a profile photo later */
       .about-img { float: left; margin: 25px 25px 25px 0; max-width: 280px; height: auto; }
       .lead a { text-decoration: underline; }
       .section-title { margin-top: 0; }
       .list-tight > li { margin-bottom: .35rem; }
-      /* Remove old custom tag hacks (tab0/tab1/etc). Use classes & Bootstrap utilities instead. */
     </style>
-
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
   <body>
     <header>
@@ -81,24 +83,18 @@
                   We are affiliated with the Department of
                   <a href="https://psychology.uiowa.edu/">Psychological and Brain Sciences</a> and the
                   <a href="https://cognitivecontrol.psychology.uiowa.edu/">Cognitive Control Collaborative</a>, a
-                  super‑lab initiative for researchers studying cognitive control.
+                  super-lab initiative for researchers studying cognitive control.
                 </p>
                 <p>We are located at 355W PBSB, 340 Iowa Ave, Iowa City, IA 52242.</p>
                 <p>Our research is supported by the National Institute of Mental Health.</p>
 
-                <!-- News (compact, no big bold title) -->
                 <h4 class="section-subtle" style="font-weight:400; font-size:18px; margin: 1.25rem 0 .5rem; color:#555;"><strong>News</strong></h4>
                 <ul class="list-unstyled news-list">
-                <li><time datetime="2025-09-21">Aug. 30, 2025</time> — Xitong graduated this summer and is now a postdoc with Anne Collins at UC Berkeley.</li>
-                <li><time datetime="2025-09-21">Sep, 19, 2025</time> — Our lab has received a new 5yr R01 funding from NIMH, which will support the continuation of our research on cognitive control and thalamocortical interactions.
-                </li>
-                <li><time datetime="2025-09-21">Sep, 21, 2025</time> — With this new funding, we are now activily recruiting new <strong>graduate students and postdocs</strong>. Please see the <a href="position.html">positions</a>  page for details.
-
-                <!-- Example entries to edit/extend:
-                <li><time datetime="2025-08-15">Aug 15, 2025</time> — New preprint posted on thalamocortical control.</li>
-                <li><time datetime="2025-07-30">Jul 30, 2025</time> — Welcome new Ph.D. student, Jane Doe!</li>
-                -->
+                  <li><time datetime="2025-09-21">Aug. 30, 2025</time> — Xitong graduated this summer and is now a postdoc with Anne Collins at UC Berkeley.</li>
+                  <li><time datetime="2025-09-21">Sep, 19, 2025</time> — Our lab has received a new 5yr R01 funding from NIMH, which will support the continuation of our research on cognitive control and thalamocortical interactions.</li>
+                  <li><time datetime="2025-09-21">Sep, 21, 2025</time> — With this new funding, we are now activily recruiting new <strong>graduate students and postdocs</strong>. Please see the <a href="position.html">positions</a> page for details.</li>
                 </ul>
+
                 <hr>
 
                 <h2 class="section-title"><strong>Lab Members</strong></h2>
@@ -135,11 +131,11 @@
       </div>
     </footer>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <!-- Local JS: jQuery then Bootstrap (upgraded), keeps CSP simple -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap-3.4.1.min.js"></script>
     <script>
-      // Auto‑update footer year
+      // Auto-update footer year
       document.getElementById('year').textContent = new Date().getFullYear();
     </script>
   </body>

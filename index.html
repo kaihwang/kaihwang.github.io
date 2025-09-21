@@ -2,94 +2,85 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SL5428RBVK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SL5428RBVK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-SL5428RBVK');
+    </script>
 
-  gtag('config', 'G-SL5428RBVK');
-</script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-      <meta name="description" content="Hwang Lab">
+    <meta name="description" content="Hwang Lab">
     <meta name="keywords" content="Hwang Lab">
     <title>Hwang Lab</title>
-    <link rel="icon" type="image/ico" href="/favicon.ico"/>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap.theme.min.css" ref="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript">
-      $(window).load(function() {
-      $(".loader").fadeOut("slow");})
-    </script>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
 
+    <!-- Security: tight CSP allowing self + GA -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+               script-src 'self' 'unsafe-inline' https://www.googletagmanager.com;
+               connect-src 'self' https://www.google-analytics.com;
+               img-src 'self' data: https:;
+               style-src 'self' 'unsafe-inline';
+               font-src 'self' data:;
+               frame-ancestors 'self';">
+
+    <!-- Local CSS (preserves banners/theme) -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.theme.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Local jQuery (upgraded) + loader fade -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(window).on("load", function () {
+        $(".loader").fadeOut("slow");
+      });
+    </script>
   </head>
   <body class="banner">
     <div class="loader"></div>
 
-
     <div class="container home" style="margin-top:0%;margin-bottom:8%;">
       <h1 style="color:white;"><b>Hwang Lab for Neurocognitive Dynamics</b></h1>
-      <h3 style="color:white;">Department of Psychological and Brain Sciences
-      <br> Cognitive Control Collaborative 
-      <br>The University of Iowa</h3>
+      <h3 style="color:white;">
+        Department of Psychological and Brain Sciences
+        <br> Cognitive Control Collaborative
+        <br> The University of Iowa
+      </h3>
 
-
-
-
-      <a href="about.html"><li class="col-xs-12 col-sm-6 block" style="background:rgba(49, 59, 75, 0.7);">
-        <h1 style="display:block;border-bottom:3px solid rgba(236,96,79,0.9);">Who We Are</h1>
-      </li></a>
+      <a href="about.html">
+        <li class="col-xs-12 col-sm-6 block" style="background:rgba(49, 59, 75, 0.7);">
+          <h1 style="display:block;border-bottom:3px solid rgba(236,96,79,0.9);">Who We Are</h1>
+        </li>
+      </a>
 
       <li class="col-xs-12 col-sm-6 block" style="background:rgba(255,255,255,0.5);padding:0;">
         <!-- Start Carousel -->
-        <div id="whoweare" class=" carousel slide" data-ride="carousel">
+        <div id="whoweare" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+            <li data-target="#whoweare" data-slide-to="0" class="active"></li>
+            <li data-target="#whoweare" data-slide-to="1"></li>
+            <li data-target="#whoweare" data-slide-to="2"></li>
+            <li data-target="#whoweare" data-slide-to="3"></li>
+            <li data-target="#whoweare" data-slide-to="4"></li>
+            <li data-target="#whoweare" data-slide-to="5"></li>
+            <li data-target="#whoweare" data-slide-to="6"></li>
           </ol>
 
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <img class="img-fluid" src="images/groundentrance.jpg" alt="..." style="height:200px;width:300px;object-fit: contain;">
-            </div>
-            <div class="item">
-              <img class="img-fluid" src="images/iowaave2.jpg" alt="..." style="height:200px;width:300px;object-fit: contain;">
-            </div>
-            <div class="item">
-              <img class="img-fluid" src="images/ground2.jpg" alt="..." style="height:200px;width:300px;object-fit: contain;">
-            </div>
-            <div class="item">
-              <img class="img-fluid" src="images/eastentrance.jpg" alt="..." style="height:200px;width:300px;object-fit: contain;">
-            </div>
-            <div class="item">
-              <img class="img-fluid" src="images/workspace2.jpg" alt="..." style="height:200px;width:300px;object-fit: contain;">
-            </div>
-            <div class="item">
-              <img class="img-fluid" src="images/eegroom.jpg" alt="..." style="height:200px;width:300px;object-fit: contain;">
-            </div>
-            <div class="item">
-              <img class="img-fluid" src="images/ground1.jpg" alt="..." style="height:200px;width:300px;object-fit: contain;">
-            </div>
+            <div class="item active"><img class="img-fluid" src="images/groundentrance.jpg" alt="..." style="height:200px;width:300px;object-fit: contain;"></div>
+            <div class="item"><img class="img-fluid" src="images/iowaave2.jpg" alt="..." style="height:200px;width:300px;object-fit: contain;"></div>
+            <div class="item"><img class="img-fluid" src="images/ground2.jpg" alt="..." style="height:200px;width:300px;object-fit: contain;"></div>
+            <div class="item"><img class="img-fluid" src="images/eastentrance.jpg" alt="..." style="height:200px;width:300px;object-fit: contain;"></div>
+            <div class="item"><img class="img-fluid" src="images/workspace2.jpg" alt="..." style="height:200px;width:300px;object-fit: contain;"></div>
+            <div class="item"><img class="img-fluid" src="images/eegroom.jpg" alt="..." style="height:200px;width:300px;object-fit: contain;"></div>
+            <div class="item"><img class="img-fluid" src="images/ground1.jpg" alt="..." style="height:200px;width:300px;object-fit: contain;"></div>
           </div>
 
           <!-- Controls -->
@@ -101,12 +92,13 @@
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
+        </div>
         <!-- End Carousel -->
       </li>
 
       <li class="col-xs-12 col-sm-6 block" style="background:rgba(255,255,255,0.5);padding:0;">
         <!-- Start Carousel -->
-        <div id="carousel-example-generic" class=" carousel slide" data-ride="carousel">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -126,45 +118,19 @@
 
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <img class="img-fluid" src="images/plos.png" alt="..." style="height:200px;width:300px;object-fit: contain;">
-            </div>
-            <div class="item">
-              <img class="img-fluid" src="images/15.png" alt="..." style="height:200px;width:300px;object-fit: contain;">
-            </div>
-            <div class="item">
-              <img class="img-fluid" src="images/TTD2.png" alt="..." style="height:200px;width:300px;object-fit: contain;">
-            </div>
-            <div class="item">
-              <img class="img-fluid" src="images/JN_Rev_Fig5.png" alt="..." style="height:200px;width:300px;object-fit: contain;">
-            </div>
-            <div class="item">
-              <img class="img-fluid" src="images/13.png" alt="..." style="height:200px;width:300px;object-fit: contain;">
-            </div>
-            <div class="item">
-              <img class="img-fluid" src="images/lesion.png" alt="..." style="height:200px;width:300px;object-fit: contain;">
-            </div>
-            <div class="item">
-              <img class="img-fluid" src="images/JN_Rev_Fig3.png" alt="..." style="height:200px;width:300px;object-fit: contain;">
-            </div>
-            <div class="item">
-              <img class="img-fluid" src="images/P2.png" alt="..." style="height:200px;width:300px;object-fit: contain;">
-            </div>
-            <div class="item">
-              <img class="img-fluid" src="images/14.png" alt="..." style="height:200px;width:300px;object-fit: contain;">
-            </div>
-            <div class="item">
-              <img class="img-fluid" src="images/Fig4.png" alt="..." style="height:200px;width:300px;object-fit: contain;">
-            </div>
-            <div class="item">
-              <img class="img-fluid" src="images/Fig3.png" alt="..." style="height:200px;width:300px;object-fit: contain;">
-            </div>
-            <div class="item">
-              <img class="img-fluid" src="images/11.png" alt="..." style="height:200px;width:300px;object-fit: contain;">
-            </div>
-            <div class="item">
-              <img class="img-fluid" src="images/12.png" alt="..." style="height:200px;width:300px;object-fit: contain;">
-            </div>
+            <div class="item active"><img class="img-fluid" src="images/plos.png" alt="..." style="height:200px;width:300px;object-fit: contain;"></div>
+            <div class="item"><img class="img-fluid" src="images/15.png" alt="..." style="height:200px;width:300px;object-fit: contain;"></div>
+            <div class="item"><img class="img-fluid" src="images/TTD2.png" alt="..." style="height:200px;width:300px;object-fit: contain;"></div>
+            <div class="item"><img class="img-fluid" src="images/JN_Rev_Fig5.png" alt="..." style="height:200px;width:300px;object-fit: contain;"></div>
+            <div class="item"><img class="img-fluid" src="images/13.png" alt="..." style="height:200px;width:300px;object-fit: contain;"></div>
+            <div class="item"><img class="img-fluid" src="images/lesion.png" alt="..." style="height:200px;width:300px;object-fit: contain;"></div>
+            <div class="item"><img class="img-fluid" src="images/JN_Rev_Fig3.png" alt="..." style="height:200px;width:300px;object-fit: contain;"></div>
+            <div class="item"><img class="img-fluid" src="images/P2.png" alt="..." style="height:200px;width:300px;object-fit: contain;"></div>
+            <div class="item"><img class="img-fluid" src="images/14.png" alt="..." style="height:200px;width:300px;object-fit: contain;"></div>
+            <div class="item"><img class="img-fluid" src="images/Fig4.png" alt="..." style="height:200px;width:300px;object-fit: contain;"></div>
+            <div class="item"><img class="img-fluid" src="images/Fig3.png" alt="..." style="height:200px;width:300px;object-fit: contain;"></div>
+            <div class="item"><img class="img-fluid" src="images/11.png" alt="..." style="height:200px;width:300px;object-fit: contain;"></div>
+            <div class="item"><img class="img-fluid" src="images/12.png" alt="..." style="height:200px;width:300px;object-fit: contain;"></div>
           </div>
 
           <!-- Controls -->
@@ -176,20 +142,23 @@
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
+        </div>
         <!-- End Carousel -->
       </li>
-      <a href="research.html"><li class="col-xs-12 col-sm-6 block" style="background:rgba(49, 59, 75, 0.7);">
-        <h1 style="border-bottom:3px solid rgba(81,164,253,0.9)">What We Do</h1>
-      </li></a>
+
+      <a href="research.html">
+        <li class="col-xs-12 col-sm-6 block" style="background:rgba(49, 59, 75, 0.7);">
+          <h1 style="border-bottom:3px solid rgba(81,164,253,0.9)">What We Do</h1>
+        </li>
+      </a>
     </div>
-    <div class="container">
-      </div>
+    <div class="container"></div>
 
     <div class="footer" style="opacity:1">
-      <p>© Kai Hwang 2018 | Designed by <a href="http://ashtonteng.com">Ashton Teng</a><p>
+      <p>© Kai Hwang 2018 | Designed by <a href="http://ashtonteng.com">Ashton Teng</a></p>
     </div>
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <!-- Local Bootstrap JS (after jQuery) -->
+    <script src="js/bootstrap-3.4.1.min.js"></script>
   </body>
 </html>
