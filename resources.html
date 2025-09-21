@@ -2,39 +2,41 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SL5428RBVK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SL5428RBVK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-SL5428RBVK');
+    </script>
 
-  gtag('config', 'G-SL5428RBVK');
-</script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-      <meta name="description" content="Hwang Lab">
+    <meta name="description" content="Hwang Lab">
     <meta name="keywords" content="Hwang Lab">
     <title>Hwang Lab</title>
-    <link rel="icon" type="image/ico" href="/favicon.ico"/>
-    <!-- Bootstrap -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+
+    <!-- Security: tight CSP allowing self + GA -->
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self';
+                   script-src 'self' 'unsafe-inline' https://www.googletagmanager.com;
+                   connect-src 'self' https://www.google-analytics.com;
+                   img-src 'self' data: https:;
+                   style-src 'self' 'unsafe-inline';
+                   font-src 'self' data:;
+                   frame-ancestors 'self';">
+
+    <!-- Local CSS (preserves banners/theme) -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap.theme.min.css" ref="stylesheet">
+    <link href="css/bootstrap.theme.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
   <body>
-
     <header>
       <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
               <span class="sr-only">Toggle navigation</span>
@@ -42,113 +44,104 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">
-              Hwang Lab
-            </a>
+            <a class="navbar-brand" href="index.html">Hwang Lab</a>
           </div>
 
-          <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li class="link1" class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+              <li class="link1"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
               <li class="link2"><a href="about.html">About Us</a></li>
               <li class="link3"><a href="research.html">Research</a></li>
               <li class="link4"><a href="publications.html">Publications</a></li>
-              <li class="link5"><a href="resources.html">Resources</a></li>
+              <li class="link5 active"><a href="resources.html">Resources</a></li>
             </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+          </div>
+        </div>
       </nav>
     </header>
 
-      <div class="container" style="padding-top:10vh">
-        <div class="jumbotron" style="height:auto;padding-top:2%;padding-bottom:2%;">
-          <div class="container">
-            <div class="col-xs-12">
+    <div class="container" style="padding-top:10vh">
+      <div class="jumbotron" style="height:auto;padding-top:2%;padding-bottom:2%;">
+        <div class="container">
+          <div class="col-xs-12">
 
-              <h2><b>Lab Philosophy</b></h2>
-              <div class="panel panel-default">
-                <div class="panel-body">
-                  <p>Lab motto: <b> We do things the hard way! </b><br>
+            <h2><b>Lab Philosophy</b></h2>
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <p>Lab motto: <b> We do things the hard way! </b><br>
                   Good science is slow, iterative, hard, but fun. <br>
                   We do not take short cuts. <br>
                   We design our experiments, collect our data, analyze our results with rigor and care. <br>
-				          We understand that productivity does not come without failure and dedication. <br>
+                  We understand that productivity does not come without failure and dedication. <br>
                   Happiest people do the best work. <br>
-
-                </div>
-              </div>
-
-              <h2><b>Lab wiki</b></h2>
-              <div class="panel panel-default">
-                <div class="panel-body">
-                  <p> We have a lab wiki that lab members can access from <a href="https://iowa.sharepoint.com/sites/Hwang-Lab"> here</a>. In the wiki you will find information on:
-                  <li> Onboarding for new lab members. </li>
-                  <li> Lab policy. </li>
-                  <li> Lab meeting topics and guidelines. </li>
-                  <li> List of suggested readings for new lab members. </li>
-                  <li> Introduction to our computing resources. </li>
-                  <li> Tutorials on various lab related topics. </li>
-                </div>
-              </div>
-
-
-
-              <h2><b>Programing</b></h2>
-              <div class="panel panel-default">
-                <div class="panel-body">
-                  <p>One must learn how to code to be an effective cognitive neuroscience researcher. Our lab uses Python and Bash scripting for data analyses and statistics. Below are some recommended resources to get started on these languages. <br>
-
-                  <li> Allmost all softwares developed for neuroimaging only run on Linux or MacOS, it is essential that you learn <a href="http://swcarpentry.github.io/shell-novice/">BASH command line</a> for scripting. Tutorial videos can be found <a href=https://www.youtube.com/watch?v=U3iNcBtycaQ&list=PLUQy4zfrctjH-FsjpIZDZ0NBznvF4FdNP>here</a>. Also check out this more advanced <a href="https://github.com/jlevy/the-art-of-command-line/blob/master/README.md"> tutorial. </a></li>
-                  <li> <a href="https://learnpythonthehardway.org/book/"> Learn Python The Hard Way</a> is a great website for learning Python's syntax. <a href="https://www.codecademy.com/tracks/python"> Codecademy </a> is also great for beginners.</li>
-                  <li> <a href="https://github.com/TomDonoghue/PythonBootcamp/blob/master/ProgrammingWithPython.ipynb">Here is a Jupyter notebook</a> with a great collection of scipy related links. </li>
-                  <li> Check out the <a href="https://jakevdp.github.io/PythonDataScienceHandbook/"> Data Science Handbook by Jake Vanerplas </a> to learn Python packages for scientific computing (e.g., numpy, pandas, sci-kit learn). </li>
-                  <li> Use <a href="http://seaborn.pydata.org/"> Seaborn </a> to make figures. </li>
-                  <li> Learn <a href="https://regexr.com/"> Regular expression.</a></li>
-                  <li> <a href="https://atom.io/"> Atom </a> is a nice, free text editor. </li>
-                  <li><b>It is the lab's policy that all project code and scripts must be uploaded, tracked, and documented on our <a href="https://research-git.uiowa.edu/"> gitlab </a> or <a href="https://github.com/HwangLabNeuroCogDynamics"> github </a> repository.</b><br></li>
-                </div>
-              </div>
-
-
-          	<h2><b>Statistics</b></h2>
-              <div class="panel panel-default">
-                <div class="panel-body">
-                  <p>Some links on stats:
-                  <li> <a href="http://mumfordbrainstats.tumblr.com/">Mumford Brain Stats</a>, for fMRI data analysis. </li>
-                  <li>Read this great paper on how to do non-parametric statistics on neuroimaging data. Though written primarily for electrophysiology data, the principle is applicable to other types of neuroimaging data or related metrics. In my experience, non-parametric approach requires less asumption, thus more flexible.
-                  <a href="http://www.sciencedirect.com/science/article/pii/S0165027007001707">Maris, E., & Oostenveld, R. (2007). Nonparametric statistical testing of EEG-and MEG-data. Journal of neuroscience methods, 164(1), 177-190.</a> </li>
-                  <li> Here is a very accessible tutorial explaining the baisc logic behind <a href="https://ocw.mit.edu/courses/mathematics/18-05-introduction-to-probability-and-statistics-spring-2014/readings/MIT18_05S14_Reading24.pdf">bootstraping and resampling statistics. </a> </li>
-                </div>
-              </div>
-
-              <h2><b>fMRI, EEG/MEG </b></h2>
-              <div class="panel panel-default">
-                <div class="panel-body">
-                  <p> Here is a list for students interested in learning more about fMRI:
-                  <li> <a href="http://jonathanpeelle.net/learning-mri/"> How to learn fMRI by Jonathan Peelle, </a> </li>
-                  <li> <a href="https://www.coursera.org/learn/functional-mri">Coursera course on fMRI, part 1</a> </li>
-                  <li> <a href="https://www.coursera.org/learn/functional-mri-2">Coursera course on fMRI, part 2</a> </li>
-                  <li> <a href="http://afni.nimh.nih.gov/pub/dist/edu/latest/">AFNI bootcamp slides</a>. </li>
-                  <li> <a href="http://www.amazon.com/Functional-Magnetic-Resonance-Imaging-Third/dp/0878936270/ref=sr_1_1?s=books&ie=UTF8&qid=1442703378&sr=1-1&keywords=Functional+Magnetic+Resonance+Imaging">A nice textbook:</a> Huettel, Scott A., Allen W. Song, and Gregory McCarthy. Functional magnetic resonance imaging. Sunderland: Sinauer Associates.</li>
-                  <h3>EEG/MEG</h3>
-                  <li> We use <a href="https://www.martinos.org/mne/stable/index.html"> MNE </a> for EEG/MEG analysis. </li>
-                </div>
+                </p>
               </div>
             </div>
+
+            <h2><b>Lab wiki</b></h2>
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <p> We have a lab wiki that lab members can access from <a href="https://iowa.sharepoint.com/sites/Hwang-Lab"> here</a>. In the wiki you will find information on:</p>
+                <li> Onboarding for new lab members. </li>
+                <li> Lab policy. </li>
+                <li> Lab meeting topics and guidelines. </li>
+                <li> List of suggested readings for new lab members. </li>
+                <li> Introduction to our computing resources. </li>
+                <li> Tutorials on various lab related topics. </li>
+              </div>
+            </div>
+
+            <h2><b>Programing</b></h2>
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <p>One must learn how to code to be an effective cognitive neuroscience researcher. Our lab uses Python and Bash scripting for data analyses and statistics. Below are some recommended resources to get started on these languages. <br></p>
+
+                <li> Allmost all softwares developed for neuroimaging only run on Linux or MacOS, it is essential that you learn <a href="http://swcarpentry.github.io/shell-novice/">BASH command line</a> for scripting. Tutorial videos can be found <a href="https://www.youtube.com/watch?v=U3iNcBtycaQ&list=PLUQy4zfrctjH-FsjpIZDZ0NBznvF4FdNP">here</a>. Also check out this more advanced <a href="https://github.com/jlevy/the-art-of-command-line/blob/master/README.md"> tutorial. </a></li>
+                <li> <a href="https://learnpythonthehardway.org/book/"> Learn Python The Hard Way</a> is a great website for learning Python's syntax. <a href="https://www.codecademy.com/tracks/python"> Codecademy </a> is also great for beginners.</li>
+                <li> <a href="https://github.com/TomDonoghue/PythonBootcamp/blob/master/ProgrammingWithPython.ipynb">Here is a Jupyter notebook</a> with a great collection of scipy related links. </li>
+                <li> Check out the <a href="https://jakevdp.github.io/PythonDataScienceHandbook/"> Data Science Handbook by Jake Vanerplas </a> to learn Python packages for scientific computing (e.g., numpy, pandas, sci-kit learn). </li>
+                <li> Use <a href="http://seaborn.pydata.org/"> Seaborn </a> to make figures. </li>
+                <li> Learn <a href="https://regexr.com/"> Regular expression.</a></li>
+                <li> <a href="https://atom.io/"> Atom </a> is a nice, free text editor. </li>
+                <li><b>It is the lab's policy that all project code and scripts must be uploaded, tracked, and documented on our <a href="https://research-git.uiowa.edu/"> gitlab </a> or <a href="https://github.com/HwangLabNeuroCogDynamics"> github </a> repository.</b><br></li>
+              </div>
+            </div>
+
+            <h2><b>Statistics</b></h2>
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <p>Some links on stats:</p>
+                <li> <a href="https://mumfordbrainstats.tumblr.com/">Mumford Brain Stats</a>, for fMRI data analysis. </li>
+                <li>Read this great paper on how to do non-parametric statistics on neuroimaging data. Though written primarily for electrophysiology data, the principle is applicable to other types of neuroimaging data or related metrics. In my experience, non-parametric approach requires less asumption, thus more flexible.
+                  <a href="http://www.sciencedirect.com/science/article/pii/S0165027007001707">Maris, E., &amp; Oostenveld, R. (2007). Nonparametric statistical testing of EEG-and MEG-data. Journal of neuroscience methods, 164(1), 177-190.</a></li>
+                <li> Here is a very accessible tutorial explaining the baisc logic behind <a href="https://ocw.mit.edu/courses/mathematics/18-05-introduction-to-probability-and-statistics-spring-2014/readings/MIT18_05S14_Reading24.pdf">bootstraping and resampling statistics. </a> </li>
+              </div>
+            </div>
+
+            <h2><b>fMRI, EEG/MEG </b></h2>
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <p> Here is a list for students interested in learning more about fMRI:</p>
+                <li> <a href="http://jonathanpeelle.net/learning-mri/"> How to learn fMRI by Jonathan Peelle, </a> </li>
+                <li> <a href="https://www.coursera.org/learn/functional-mri">Coursera course on fMRI, part 1</a> </li>
+                <li> <a href="https://www.coursera.org/learn/functional-mri-2">Coursera course on fMRI, part 2</a> </li>
+                <li> <a href="http://afni.nimh.nih.gov/pub/dist/edu/latest/">AFNI bootcamp slides</a>. </li>
+                <li> <a href="https://www.amazon.com/Functional-Magnetic-Resonance-Imaging-Third/dp/0878936270/ref=sr_1_1?s=books&ie=UTF8&qid=1442703378&sr=1-1&keywords=Functional+Magnetic+Resonance+Imaging">A nice textbook:</a> Huettel, Scott A., Allen W. Song, and Gregory McCarthy. Functional magnetic resonance imaging. Sunderland: Sinauer Associates.</li>
+                <h3>EEG/MEG</h3>
+                <li> We use <a href="https://www.martinos.org/mne/stable/index.html"> MNE </a> for EEG/MEG analysis. </li>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
-
-    </br>
-    </br>
-
-   <div class="footer">
     </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <br><br>
+    <div class="footer"></div>
+
+    <!-- Local JS: jQuery then Bootstrap (upgraded), keeps CSP simple -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap-3.4.1.min.js"></script>
   </body>
 </html>

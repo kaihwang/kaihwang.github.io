@@ -2,48 +2,45 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SL5428RBVK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SL5428RBVK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-SL5428RBVK');
+    </script>
 
-  gtag('config', 'G-SL5428RBVK');
-</script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-      <meta name="description" content="Hwang Lab">
+    <meta name="description" content="Hwang Lab">
     <meta name="keywords" content="Hwang Lab">
     <title>Hwang Lab</title>
-    <link rel="icon" type="image/ico" href="/favicon.ico"/>
-    <!-- Bootstrap -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+
+    <!-- Security: tight CSP allowing self + GA -->
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self';
+                   script-src 'self' 'unsafe-inline' https://www.googletagmanager.com;
+                   connect-src 'self' https://www.google-analytics.com;
+                   img-src 'self' data: https:;
+                   style-src 'self' 'unsafe-inline';
+                   font-src 'self' data:;
+                   frame-ancestors 'self';">
+
+    <!-- Local CSS (preserves banners/theme) -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap.theme.min.css" ref="stylesheet">
+    <link href="css/bootstrap.theme.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
     <style>
-    img {
-    float: left;
-    margin: 10px 10px 10px 10px;
-    }
+      img { float: left; margin: 10px; }
     </style>
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-
   </head>
   <body>
-
-
     <header>
       <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
               <span class="sr-only">Toggle navigation</span>
@@ -51,210 +48,186 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">
-            Hwang Lab
-            </a>
+            <a class="navbar-brand" href="index.html">Hwang Lab</a>
           </div>
 
-          <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li class="link1" class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+              <li class="link1"><a href="index.html">Home</a></li>
               <li class="link2"><a href="about.html">About Us</a></li>
-              <li class="link3"><a href="research.html">Research</a></li>
+              <li class="link3 active"><a href="research.html">Research <span class="sr-only">(current)</span></a></li>
               <li class="link4"><a href="publications.html">Publications</a></li>
               <li class="link5"><a href="resources.html">Resources</a></li>
             </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+          </div>
+        </div>
       </nav>
     </header>
 
-      <div class="container" style="padding-top:10vh">
-        <div class="jumbotron" style="height:auto;padding-top:2%;">
-          <div class="container">
+    <div class="container" style="padding-top:10vh">
+      <div class="jumbotron" style="height:auto;padding-top:2%;">
+        <div class="container">
 
-            <div class="col-xs-12">
-              <h2><b>Research</b></h2>
-              <h3><b><u>Network mechanisms of cognitive control:</b></u> We study how brain networks interact to transmit, select, or inhibit information for flexible human behaviors.</h3>
-              <h3><b><u>Integration of control representations:</u></b> We investigate the structure, dynamics, and interactions between task representations that facilitate cognitive control. </h3>
-              <h3><b><u>Methods:</b></u> Our research utilizes a variety of methods: </h3>
-              <ul>
-                <li><h4><b>Cognitive paradigms and computational modeling (e.g., Bayesian generative model) to constrain our neuroimaging analyses. </h4></b></li>
-                <li><h4><b>Multimodal neuroimaging, fMRI, EEG, time-frequency and connectivity analyses.</h4></b></li>
-                <li><h4><b>Representational analyses, decoding and represention similarity analyses.</h4></b></li>
-                <li><h4><b>Experimental neuropsychology, lesion approaches, and causal TMS manipulations.</h4></b></li>
-              </ul>
-              </br>
+          <div class="col-xs-12">
+            <h2><b>Research</b></h2>
+            <h3><b><u>Network mechanisms of cognitive control:</u></b> We study how brain networks interact to transmit, select, or inhibit information for flexible human behaviors.</h3>
+            <h3><b><u>Integration of control representations:</u></b> We investigate the structure, dynamics, and interactions between task representations that facilitate cognitive control. </h3>
+            <h3><b><u>Methods:</u></b> Our research utilizes a variety of methods: </h3>
+            <ul>
+              <li><h4><b>Cognitive paradigms and computational modeling (e.g., Bayesian generative model) to constrain our neuroimaging analyses.</b></h4></li>
+              <li><h4><b>Multimodal neuroimaging, fMRI, EEG, time-frequency and connectivity analyses.</b></h4></li>
+              <li><h4><b>Representational analyses, decoding and represention similarity analyses.</b></h4></li>
+              <li><h4><b>Experimental neuropsychology, lesion approaches, and causal TMS manipulations.</b></h4></li>
+            </ul>
+            <br>
+          </div>
 
-            </div>
-
-            <div class="col-xs-12 col-md-12">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h3 class="panel-title"><b>Structure and dynamics of task representations </b></h3>
-                </div>
-                <div class="panel-body">
-                 <img alt="task" src="images/task.png">
-                 <p> Task representations is a central component of cognitive control. However, several important properties of task representations are not well understood, including their structure and interactive dynamics.
-                 This is likely because it is difficult to directly observe these latent properties of mental representations using conventional behavioral and neuroimaging methods. We are conducting mulitmodal neuroimag, lesion, and behavioral modeling studies to discover
-                 the structure and dynamics of representations that facilitate cognitive control.
-                 <li> Cellier, D., Petersen, I.T., Hwang, K. (2022). Dynamics of hierarchical task representations. Journal of Neuroscience, 42(38), 7276-7284.    </li>
-                 <li> Leach, S.L., Hollis, J., Sorenson, E., Cellier, D., Hwang, K. (2022) Mapping representational integration for hierarchical cognitive control. Cognitive Neuroscience Society Meeting, San Francisco CA </li>
-                 <li> Chen, X., Leach, S. C., Hollis, J., Cellier, D., & Hwang, K. (2024). The thalamus encodes and updates context representations during hierarchical cognitive control. PLoS biology, 22(12), e3002937.</li> 
-                 <br>
-
-                </div>
+          <div class="col-xs-12 col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><b>Structure and dynamics of task representations </b></h3>
+              </div>
+              <div class="panel-body">
+                <img alt="task" src="images/task.png">
+                <p> Task representations is a central component of cognitive control. However, several important properties of task representations are not well understood, including their structure and interactive dynamics.
+                This is likely because it is difficult to directly observe these latent properties of mental representations using conventional behavioral and neuroimaging methods. We are conducting mulitmodal neuroimag, lesion, and behavioral modeling studies to discover
+                the structure and dynamics of representations that facilitate cognitive control.</p>
+                <li> Cellier, D., Petersen, I.T., Hwang, K. (2022). Dynamics of hierarchical task representations. Journal of Neuroscience, 42(38), 7276-7284. </li>
+                <li> Leach, S.L., Hollis, J., Sorenson, E., Cellier, D., Hwang, K. (2022) Mapping representational integration for hierarchical cognitive control. Cognitive Neuroscience Society Meeting, San Francisco CA </li>
+                <li> Chen, X., Leach, S. C., Hollis, J., Cellier, D., & Hwang, K. (2024). The thalamus encodes and updates context representations during hierarchical cognitive control. PLoS biology, 22(12), e3002937.</li>
+                <br>
               </div>
             </div>
+          </div>
 
-            <div class="col-xs-12 col-md-12">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h3 class="panel-title"><b>Mechanisms of cognitive integration </b></h3>
-                </div>
-                <div class="panel-body">
-                  <img alt="Integration" src="images/integration.png">
-                 <p> Many cognitively challenging tasks require the integration of diverse information sources rather than relying on a single factor. For example, consider a chef preparing a complex dish in a restaurant kitchen. The chef must integrate the recipe (long-term memory), the ticket order (working memory), and the progress of the dish on the stove (sensory input). Thus, behavior is continuously shaped by the integration of multiple factors. Despite its clear behavioral significance, the term “integration” is frequently employed in the field loosely without specificity regarding the underlying cognitive and neural mechanisms.
-                  We are currently developing a neurocognitive model of cognitive integration.
-                  <li>Leach, S.C., Morrow, H., Jiang, J., Hwang, K. (2024). Cognitive integration – How task representations integrate information from multiple sources. Cognitive Computational Neuroscience 2024. Boston, MA </li>
-                 <br>
-
-                </div>
+          <div class="col-xs-12 col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><b>Mechanisms of cognitive integration </b></h3>
+              </div>
+              <div class="panel-body">
+                <img alt="Integration" src="images/integration.png">
+                <p> Many cognitively challenging tasks require the integration of diverse information sources rather than relying on a single factor. For example, consider a chef preparing a complex dish in a restaurant kitchen. The chef must integrate the recipe (long-term memory), the ticket order (working memory), and the progress of the dish on the stove (sensory input). Thus, behavior is continuously shaped by the integration of multiple factors. Despite its clear behavioral significance, the term “integration” is frequently employed in the field loosely without specificity regarding the underlying cognitive and neural mechanisms.
+                We are currently developing a neurocognitive model of cognitive integration.</p>
+                <li>Leach, S.C., Morrow, H., Jiang, J., Hwang, K. (2024). Cognitive integration – How task representations integrate information from multiple sources. Cognitive Computational Neuroscience 2024. Boston, MA </li>
+                <br>
               </div>
             </div>
+          </div>
 
-            <div class="col-xs-12 col-md-12">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h3 class="panel-title"><b>Integrative functions of working memory </b></h3>
-                </div>
-                <div class="panel-body">
-                  <img alt="Integration" src="images/WMInt.png" style="width: 300px;">
-                 <p> Many have argued that working memory is the medium that guides cognitive control. However, beyond estimating the precision and capacity 
-                  of working memory content, it is unclear how humans actively and adaptively use working memory to guide our actions and decisions. 
-                  Our lab is actively developing computational models to determine how working memory integrates diverse sources of information for decision-making.
-                  This work will integrate modeling, multimodal neuroimaging, decoding, model-based fMRI/EEG analyses, and linear state-space modeling.
-                  <li>Chen, X., Jiang, J., Hwang, K. (2024). Working memory constructs joint probabilistic task representations for decision-making. Cognitive Computational Neuroscience 2024. Boston, MA</li>
-                 <br>
-
-                </div>
+          <div class="col-xs-12 col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><b>Integrative functions of working memory </b></h3>
+              </div>
+              <div class="panel-body">
+                <img alt="Integration" src="images/WMInt.png" style="width: 300px;">
+                <p> Many have argued that working memory is the medium that guides cognitive control. However, beyond estimating the precision and capacity
+                of working memory content, it is unclear how humans actively and adaptively use working memory to guide our actions and decisions.
+                Our lab is actively developing computational models to determine how working memory integrates diverse sources of information for decision-making.
+                This work will integrate modeling, multimodal neuroimaging, decoding, model-based fMRI/EEG analyses, and linear state-space modeling.</p>
+                <li>Chen, X., Jiang, J., Hwang, K. (2024). Working memory constructs joint probabilistic task representations for decision-making. Cognitive Computational Neuroscience 2024. Boston, MA</li>
+                <br>
               </div>
             </div>
+          </div>
 
-            <div class="col-xs-12 col-md-12">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h3 class="panel-title"><b>Cognitive flexibility and hierarchical cognitive control</b></h3>
-                </div>
-                <div class="panel-body">
-                 <img alt="Thalamocortical" src="images/HCC.png">
-                 <p>The cardinal characteristic of cognitive control is it is flexible and context dependent. We are not governed by the same set of rules in every situation. If so, how do we use circumstantial information to adjust our actions, specifically, adjust mappings between sensory and motor processes? We have developed a paradigm that requires human subjects to switch between action rules depending on a superordinate, circumstantial context. Parallel EEG and fMRI studies are now in progress.  </p>
-                 <br>
-                 <li> Chen, X., Leach, S. C., Hollis, J., Cellier, D., & Hwang, K. (2024). The thalamus encodes and updates context representations during hierarchical cognitive control. PLoS biology, 22(12), e3002937. </li>
-                 <li> Cellier, D., Petersen, I.T., Hwang, K. (2022). Dynamics of hierarchical task representations. Journal of Neuroscience, 42(38), 7276-7284.    </li>
-                 <li> Riddle, J., Vogelsang, D. A., Hwang, K., Cellier, D., & D'Esposito, M. (2020). Distinct oscillatory dynamics underlie different components of hierarchical cognitive control. Journal of Neuroscience, 40(25), 4945-4953. </li>
-                 <br>
-
-                </div>
+          <div class="col-xs-12 col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><b>Cognitive flexibility and hierarchical cognitive control</b></h3>
+              </div>
+              <div class="panel-body">
+                <img alt="Thalamocortical" src="images/HCC.png">
+                <p>The cardinal characteristic of cognitive control is it is flexible and context dependent. We are not governed by the same set of rules in every situation. If so, how do we use circumstantial information to adjust our actions, specifically, adjust mappings between sensory and motor processes? We have developed a paradigm that requires human subjects to switch between action rules depending on a superordinate, circumstantial context. Parallel EEG and fMRI studies are now in progress.</p>
+                <br>
+                <li> Chen, X., Leach, S. C., Hollis, J., Cellier, D., & Hwang, K. (2024). The thalamus encodes and updates context representations during hierarchical cognitive control. PLoS biology, 22(12), e3002937. </li>
+                <li> Cellier, D., Petersen, I.T., Hwang, K. (2022). Dynamics of hierarchical task representations. Journal of Neuroscience, 42(38), 7276-7284. </li>
+                <li> Riddle, J., Vogelsang, D. A., Hwang, K., Cellier, D., & D'Esposito, M. (2020). Distinct oscillatory dynamics underlie different components of hierarchical cognitive control. Journal of Neuroscience, 40(25), 4945-4953. </li>
+                <br>
               </div>
             </div>
+          </div>
 
-            <div class="col-xs-12 col-md-12">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h3 class="panel-title"><b>Spectral neural dynamics and cognitive control </b></h3>
-                </div>
-                <div class="panel-body">
-                 <img alt="MTD" src="images/osci.png">
-                 <p>How do brain networks flexibly process and communicate  information? Possibly through oscillatory neural activities. Different brain rhythms are thought to reflect distinct biophysical and circuit-level processes, thus could be indices of distinct neurocognitive mechanisms. We study how oscillatory neural dynamics support cognitive control in adults and during development.
-                 <br>
-                 <li>Cellier, D., Riddle, J., Petersen, I., & Hwang, K. (2021). The development of theta and alpha neural oscillations from ages 3 to 24 years. Developmental Cognitive Neuroscience, 100969. </li>
-                 <li>Riddle, J., Hwang, K., Cellier, D., Dhanani, S., D’Esposito, M. (2019). Causal evidence for the role of neuronal oscillations in top-down and bottom-up attention. Journal of Cognitive Neuroscience. </li>
-                 <li>Hwang, K., Ghuman A. S., Manoach, D. S., Jones, S. R., Luna, B. (2016). <a href="http://www.ncbi.nlm.nih.gov/pubmed/27173759"> Frontal preparatory neural oscillations associated with cognitive control: A developmental study comparing young adults and adolescents. </a>NeuroImage, 136:139-48.   </li>
-                 <li>Hwang, K., Ghuman A. S., Manoach, D. S., Jones, S .R., Luna, B. (2014). <a href="http://www.jneurosci.org/content/34/29/9551.full">Cortical Neurodynamics of Inhibitory control</a>. Journal of Neuroscience, 34(29):9551:9561.</li>
-                 </p>
-
-
-                </div>
+          <div class="col-xs-12 col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><b>Spectral neural dynamics and cognitive control </b></h3>
+              </div>
+              <div class="panel-body">
+                <img alt="MTD" src="images/osci.png">
+                <p>How do brain networks flexibly process and communicate  information? Possibly through oscillatory neural activities. Different brain rhythms are thought to reflect distinct biophysical and circuit-level processes, thus could be indices of distinct neurocognitive mechanisms. We study how oscillatory neural dynamics support cognitive control in adults and during development.</p>
+                <br>
+                <li>Cellier, D., Riddle, J., Petersen, I., & Hwang, K. (2021). The development of theta and alpha neural oscillations from ages 3 to 24 years. Developmental Cognitive Neuroscience, 100969. </li>
+                <li>Riddle, J., Hwang, K., Cellier, D., Dhanani, S., D’Esposito, M. (2019). Causal evidence for the role of neuronal oscillations in top-down and bottom-up attention. Journal of Cognitive Neuroscience. </li>
+                <li>Hwang, K., Ghuman A. S., Manoach, D. S., Jones, S. R., Luna, B. (2016). <a href="http://www.ncbi.nlm.nih.gov/pubmed/27173759"> Frontal preparatory neural oscillations associated with cognitive control: A developmental study comparing young adults and adolescents. </a>NeuroImage, 136:139-48.   </li>
+                <li>Hwang, K., Ghuman A. S., Manoach, D. S., Jones, S .R., Luna, B. (2014). <a href="http://www.jneurosci.org/content/34/29/9551.full">Cortical Neurodynamics of Inhibitory control</a>. Journal of Neuroscience, 34(29):9551:9561.</li>
               </div>
             </div>
+          </div>
 
-            <div class="col-xs-12 col-md-12">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h3 class="panel-title"><b>Cognitive control functions of the human thalamocortical system </b></h3>
-                </div>
-                <div class="panel-body">
-                 <img alt="Thalamocortical" src="images/Tha1.png">
-                 <p>The mammalian brain can be conceptualized as a thalamocortical system, yet the thalamus is often ignored in studies of brain network organization.
-                   One major focus of our research is to use advanced network neurosciecne techniques to investigate the thalamus's contribution to diverse network and cognitive functions.
-                 <br>
-                 <li>Hwang, K., Bertolero M., Liu, W., D’Esposito, M. (2017). The human thalamus is an integrative hub for functional brain Networks. Journal of Neurosciene. 37(23), 5594-5607</li>
-                 <li>Chen X., Sorenson, E., Hwang, K. (2023). Thalamocortical contributions to working memory processes during the n-back task. Neurobiology of Learning and Memory, 197(107701).  </li>
-                 <li>Hwang, K., Shine, J.M., Cole, M.W., Sorenson, E. (2022). Thalamocortical contributions to cognitive task activity. eLife, 11, e81282.  </li>
-                 <li>Shine, J.M., Lewis, L.D., Garrett, D., Hwang K. (2023). The impact of the human thalamus on brain-wide information processing. Nature Reviews Neuroscience, 24(7), 416-430</li>
-                 <li> Chen, X., Leach, S. C., Hollis, J., Cellier, D., & Hwang, K. (2024). The thalamus encodes and updates context representations during hierarchical cognitive control. PLoS biology, 22(12), e3002937.</li> 
- 
-                </p>
-
-                </div>
+          <div class="col-xs-12 col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><b>Cognitive control functions of the human thalamocortical system </b></h3>
+              </div>
+              <div class="panel-body">
+                <img alt="Thalamocortical" src="images/Tha1.png">
+                <p>The mammalian brain can be conceptualized as a thalamocortical system, yet the thalamus is often ignored in studies of brain network organization.
+                One major focus of our research is to use advanced network neurosciecne techniques to investigate the thalamus's contribution to diverse network and cognitive functions.</p>
+                <br>
+                <li>Hwang, K., Bertolero M., Liu, W., D’Esposito, M. (2017). The human thalamus is an integrative hub for functional brain Networks. Journal of Neurosciene. 37(23), 5594-5607</li>
+                <li>Chen X., Sorenson, E., Hwang, K. (2023). Thalamocortical contributions to working memory processes during the n-back task. Neurobiology of Learning and Memory, 197(107701).  </li>
+                <li>Hwang, K., Shine, J.M., Cole, M.W., Sorenson, E. (2022). Thalamocortical contributions to cognitive task activity. eLife, 11, e81282.  </li>
+                <li>Shine, J.M., Lewis, L.D., Garrett, D., Hwang K. (2023). The impact of the human thalamus on brain-wide information processing. Nature Reviews Neuroscience, 24(7), 416-430</li>
+                <li> Chen, X., Leach, S. C., Hollis, J., Cellier, D., & Hwang, K. (2024). The thalamus encodes and updates context representations during hierarchical cognitive control. PLoS biology, 22(12), e3002937.</li>
               </div>
             </div>
+          </div>
 
-
-
-            <div class="col-xs-12 col-md-12">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h3 class="panel-title"><b>Effects of thalamic lesions </b></h3>
-                </div>
-                <div class="panel-body">
-                 <img alt="Thalamocortical" src="images/ThaLesion.png">
-                 <p>The human thalamus is a difficult region to study because of its small size and deep location. To address this challenge, we are now conducting studies with a novel approach: combining multimodal neuroimaging (fMRI and EEG) and human lesions studies. The goal is to determine how the disruption of thalamocortical interactions after thalamic lesion affects cortical neural activity and behavior. We are now focusing on how the thalamus modulate cortical evoked responses, neural oscillations, and cortico-cortical functional connectivity for cognitive control.
-                 <br>
-                 <li>Hwang, K., Bruss, J., Tranel, D., & Boes, A. D. (2020). Network localization of executive function deficits in patients with focal thalamic lesions. Journal of Cognitive Neuroscience, 32(12), 2303-2319. </li>
-                 <li>Reber, J., Hwang, K., Bowren, M.A., Bruss, J., Tranel, D., Boes, A.D (2021). Cognitive impairment after focal brain damage is associated damages to structural, but not functional network hubs. Proceedings of the National Academy of Sciences 118.19 (2021). </li>
-                 <li>Hwang, K., Shine, J.M., Bruss, J., Tranel, D., Boes, A.D. (2021). Neuropsychological evidence of multi-modal network hubs in the human thalamus. eLife. 2021;10:e69480 </li>
-
-                </div>
+          <div class="col-xs-12 col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><b>Effects of thalamic lesions </b></h3>
+              </div>
+              <div class="panel-body">
+                <img alt="Thalamocortical" src="images/ThaLesion.png">
+                <p>The human thalamus is a difficult region to study because of its small size and deep location. To address this challenge, we are now conducting studies with a novel approach: combining multimodal neuroimaging (fMRI and EEG) and human lesions studies. The goal is to determine how the disruption of thalamocortical interactions after thalamic lesion affects cortical neural activity and behavior. We are now focusing on how the thalamus modulate cortical evoked responses, neural oscillations, and cortico-cortical functional connectivity for cognitive control.</p>
+                <br>
+                <li>Hwang, K., Bruss, J., Tranel, D., & Boes, A. D. (2020). Network localization of executive function deficits in patients with focal thalamic lesions. Journal of Cognitive Neuroscience, 32(12), 2303-2319. </li>
+                <li>Reber, J., Hwang, K., Bowren, M.A., Bruss, J., Tranel, D., Boes, A.D (2021). Cognitive impairment after focal brain damage is associated damages to structural, but not functional network hubs. Proceedings of the National Academy of Sciences 118.19 (2021). </li>
+                <li>Hwang, K., Shine, J.M., Bruss, J., Tranel, D., Boes, A.D. (2021). Neuropsychological evidence of multi-modal network hubs in the human thalamus. eLife. 2021;10:e69480 </li>
               </div>
             </div>
+          </div>
 
-
-            <div class="col-xs-12 col-md-12">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h3 class="panel-title"><b>Netowrk processes implementing cognitive control</b></h3>
-                </div>
-                <div class="panel-body">
-                 <img alt="MTD" src="images/MTD.png">
-                 <p>Could functional connectivity be modulated by "top-down biasing signals"? We are studying how cognitive control influences information exchange between task-related brain regions, and to identify brain regions interacting with dynamic functional connectivity patterns. We use TMS to causally map regions that provide "biasing signals" to enhance or inhibit functional connectivity for cognitive control.
-                 <br>
-                 <br>
-                 <li>Iyer, K.K., Hwang, K., Hearne, L. J., Muller, E., D’Esposito, M., Shine, J.M., Cocchi, L. (2022). Focal neural perturbations reshape the low-dimensional brain activity flow supporting task performance. Nature Communications. </li>
-                 <li>Hwang, K., Shine, J.M., Cellier, D., D’Esposito, M. (2020). The human intraparietal sulcus modulates task-evoked functional connectivity. Cerebral Cortex. 30(3), 875-887. </li>
-                 <li>Hwang, K., Shine, J. M., D’Esposito, M. (2019). Fronto-parietal activity interacts with task-evoked changes in functional connectivity. Cerebral Cortex. 29(2):802-813 <a href="https://academic.oup.com/cercor/advance-article/doi/10.1093/cercor/bhy011/4836785?guestAccessKey=eb65064b-6678-4a1e-93e2-90d88aae7f5c"> Link to paper. </a></li>
-                 </p>
-
-
-                </div>
+          <div class="col-xs-12 col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><b>Netowrk processes implementing cognitive control</b></h3>
+              </div>
+              <div class="panel-body">
+                <img alt="MTD" src="images/MTD.png">
+                <p>Could functional connectivity be modulated by "top-down biasing signals"? We are studying how cognitive control influences information exchange between task-related brain regions, and to identify brain regions interacting with dynamic functional connectivity patterns. We use TMS to causally map regions that provide "biasing signals" to enhance or inhibit functional connectivity for cognitive control.</p>
+                <br>
+                <li>Iyer, K.K., Hwang, K., Hearne, L. J., Muller, E., D’Esposito, M., Shine, J.M., Cocchi, L. (2022). Focal neural perturbations reshape the low-dimensional brain activity flow supporting task performance. Nature Communications. </li>
+                <li>Hwang, K., Shine, J.M., Cellier, D., D’Esposito, M. (2020). The human intraparietal sulcus modulates task-evoked functional connectivity. Cerebral Cortex. 30(3), 875-887. </li>
+                <li>Hwang, K., Shine, J. M., D’Esposito, M. (2019). Fronto-parietal activity interacts with task-evoked changes in functional connectivity. Cerebral Cortex. 29(2):802-813 <a href="https://academic.oup.com/cercor/advance-article/doi/10.1093/cercor/bhy011/4836785?guestAccessKey=eb65064b-6678-4a1e-93e2-90d88aae7f5c"> Link to paper. </a></li>
               </div>
             </div>
+          </div>
 
+          <!-- <h4> * Unfortunately, as these are internal projects, previews are not available.</h4> -->
 
-              <!--<h4> * Unfortunately, as these are internal projects, previews are not available.</h4>-->
-        </div>
         </div>
       </div>
-    </br>
-    </br>
-    <div class="footer">
     </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <br><br>
+    <div class="footer"></div>
+
+    <!-- Local JS: jQuery then Bootstrap (upgraded), keeps CSP simple -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap-3.4.1.min.js"></script>
   </body>
 </html>
