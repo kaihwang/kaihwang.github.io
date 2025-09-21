@@ -2,129 +2,145 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SL5428RBVK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SL5428RBVK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);} 
+      gtag('js', new Date());
+      gtag('config', 'G-SL5428RBVK');
+    </script>
 
-  gtag('config', 'G-SL5428RBVK');
-</script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-      <meta name="description" content="Hwang Lab">
+    <meta name="description" content="Hwang Lab">
     <meta name="keywords" content="Hwang Lab">
-    <title>Hwang Lab</title>
-    <link rel="icon" type="image/ico" href="/favicon.ico"/>
-    <!-- Bootstrap -->
+
+    <title>Hwang Lab — About</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- Bootstrap 3 -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap.theme.min.css" ref="stylesheet">
+    <link href="css/bootstrap.theme.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
     <style>
-    img {
-    float: left;
-    margin: 25px 25px 25px 0px;
-    }
-    tab1 { padding-left: 2em; }
-    tab0 { padding-left: 2.2em; }
-    tab2 { padding-left: 1.67em; }
-    tab3 { padding-left: 4.49em; }
+      /* Keep the image styling if you add a profile photo later */
+      .about-img { float: left; margin: 25px 25px 25px 0; max-width: 280px; height: auto; }
+      .lead a { text-decoration: underline; }
+      .section-title { margin-top: 0; }
+      .list-tight > li { margin-bottom: .35rem; }
+      /* Remove old custom tag hacks (tab0/tab1/etc). Use classes & Bootstrap utilities instead. */
     </style>
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
   </head>
   <body>
-
     <header>
-      <nav class="navbar navbar-inverse navbar-fixed-top">
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false" aria-controls="main-nav">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">
-            Hwang Lab
-            </a>
+            <a class="navbar-brand" href="index.html">Hwang Lab</a>
           </div>
 
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div id="main-nav" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-              <li class="link1" class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
-              <li class="link2"><a href="about.html">About Us</a></li>
+              <li class="link1"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+              <li class="link2 active"><a href="about.html">About Us</a></li>
               <li class="link3"><a href="research.html">Research</a></li>
               <li class="link4"><a href="publications.html">Publications</a></li>
               <li class="link5"><a href="resources.html">Resources</a></li>
             </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+          </div>
+        </div>
       </nav>
     </header>
 
-      <div class="container" style="padding-top:10vh">
-        <div class="jumbotron" style="height:auto;padding-top:2%;;padding-bottom:2%;">
+    <main>
+      <div class="container" style="padding-top: 80px;">
+        <div class="jumbotron" style="padding-top: 2%; padding-bottom: 2%;">
           <div class="container">
-          <!--<img alt="ME" src="images/Kai-wp.jpg" style="width:auto;height:300px;">-->
+            <!-- Optional profile image -->
+            <!-- <img class="about-img" alt="Kai Hwang" src="images/Kai-wp.jpg"> -->
 
-          <div class="panel panel-default">
-          <div class="panel-body">
-	          <h2><strong>Welcome!</h2>
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h2 class="section-title"><strong>Welcome!</strong></h2>
+                <p class="lead">
+                  Research in the Hwang Lab focuses on the cognitive and neural dynamics of cognitive control. Learn more on our
+                  <a href="research.html">research</a> and <a href="publications.html">publications</a> pages.
+                  We are affiliated with the Department of
+                  <a href="https://psychology.uiowa.edu/">Psychological and Brain Sciences</a> and the
+                  <a href="https://cognitivecontrol.psychology.uiowa.edu/">Cognitive Control Collaborative</a>, a
+                  super‑lab initiative for researchers studying cognitive control.
+                </p>
+                <p>We are located at 355W PBSB, 340 Iowa Ave, Iowa City, IA 52242.</p>
+                <p>Our research is supported by the National Institute of Mental Health.</p>
 
-	          <p>Research in the Hwang lab focuses on the cognitive and neural dynamics of cognitive control. You can learn more about our work by reading the <a href="research.html">research</a> page or <a href="publications.html">publications</a>.
-	      	  We are affilated with the Department of <a href="https://psychology.uiowa.edu/"> Psychological and Brain Sciences</a> 
-            and the <a href="https://cognitivecontrol.psychology.uiowa.edu/"> Cognitive Control Collaborative</a>, a "superlab" initative that brings together researchers that share a common interest in cognitive control.</p>
-	          <p>We are located at 355W PBSB, 340 Iowa Ave, Iowa City, IA 52242.
-            <p>Our research is funded by the National Institute of Mental Health. </p>
-	          <br>
+                <!-- News (compact, no big bold title) -->
+                <h4 class="section-subtle" style="font-weight:400; font-size:18px; margin: 1.25rem 0 .5rem; color:#555;"><strong>News</strong></h4>
+                <ul class="list-unstyled news-list">
+                <li><time datetime="2025-09-21">Aug. 30, 2025</time> — Xitong graduated this summer and is now a postdoc with Anne Collins at UC Berkeley.</li>
+                <li><time datetime="2025-09-21">Sep, 19, 2025</time> — Our lab has received a new 5yr R01 funding from NIMH, which will support the continuation of our research on cognitive control and thalamocortical interactions.
+                </li>
+                <li><time datetime="2025-09-21">Sep, 21, 2025</time> — With this new funding, we are now activily recruiting new <strong>graduate students and postdocs</strong>. Please see the <a href="position.html">positions</a>  page for details.
 
-            <hr />
-            <h2><strong> Lab Members </strong></h2>
-            <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p align="left">
-            <strong>Kai Hwang, Ph.D.</strong> Lab Director<br />
-            Email: <a href="mailto:kai-hwang@uiowa.edu">kai-hwang@uiowa.edu</a> <br />
-            <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p align="left">
-            <strong>Shannon Stokes</strong>, Research Assistant & Lab Manager <br />
-            <strong>Stephanie Leach</strong>, Ph.D. Student, Psychological and Brain Sciences <br />
-            <strong>Xitong Chen</strong>, Ph.D. Student, Psychological and Brain Sciences <br />
-            <br />
-            <hr />
+                <!-- Example entries to edit/extend:
+                <li><time datetime="2025-08-15">Aug 15, 2025</time> — New preprint posted on thalamocortical control.</li>
+                <li><time datetime="2025-07-30">Jul 30, 2025</time> — Welcome new Ph.D. student, Jane Doe!</li>
+                -->
+                </ul>
+                <hr>
 
+                <h2 class="section-title"><strong>Lab Members</strong></h2>
+                <ul class="list-unstyled list-tight">
+                  <li><strong>Kai Hwang, Ph.D.</strong> — Lab Director — Email: <a href="mailto:kai-hwang@uiowa.edu">kai-hwang@uiowa.edu</a></li>
+                  <li><strong>Shannon Stokes</strong> — Research Assistant &amp; Lab Manager</li>
+                  <li><strong>Stephanie Leach</strong> — Ph.D. Student, Psychological and Brain Sciences</li>
+                </ul>
 
+                <hr>
 
-            <h2><strong> Alumni </strong></h2>
-            <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p align="left">
-            <strong>Ray Gonzalez</strong>, Scientific Programmer, 2022-2024<br />
-            <strong>Mengxing Liu</strong>, Postdoc collaborator from Tufts<br />    
-            <strong>Hannah Morrow</strong>, Lab Manager, 2022-2024, afterwards: PhD student at Montclair State University  <br />
-            <strong>Neha Nagarkar</strong>, Undergraduate RA & ICRU Fellow, 2022-2024, afterwards: PhD student at Oregon. <br /> 
-            <strong>Juniper Hollis</strong>, lab manager, 2020-2022, afterwards: research associate, radiology, UIHC. <br />
-            <strong>Dillan Cellier</strong>, lab manager 2018-2020, afterwards: PhD student at UCSD. <br />
-            <strong>Evan Sorenson</strong>, scientific programmer 2020-2022, afterwards: software engineer. <br />
+                <h2 class="section-title"><strong>Alumni</strong></h2>
+                <ul class="list-unstyled list-tight">
+                  <li><strong>Xitong Chen, Ph.D.</strong> — Ph.D. Student, 2019 to 2025; now postdoc at UC Berkeley</li>
+                  <li><strong>Ray Gonzalez</strong> — Scientific Programmer, 2022–2024</li>
+                  <li><strong>Mengxing Liu, Ph.D.</strong> — Postdoc collaborator from Tufts</li>
+                  <li><strong>Hannah Morrow</strong> — Lab Manager, 2022–2024; now Ph.D. student at Montclair State University</li>
+                  <li><strong>Neha Nagarkar</strong> — Undergraduate RA &amp; ICRU Fellow, 2022–2024; now Ph.D. student at Oregon</li>
+                  <li><strong>Juniper Hollis</strong> — Lab Manager, 2020–2022; now Research Associate, Radiology, UIHC</li>
+                  <li><strong>Dillan Cellier</strong> — Lab Manager, 2018–2020; now Ph.D. student at UCSD</li>
+                  <li><strong>Evan Sorenson</strong> — Scientific Programmer, 2020–2022; now Software Engineer</li>
+                </ul>
+              </div>
+            </div>
 
-
-
-        </div>
+          </div>
         </div>
       </div>
-    </div>
-   </br>
-   <div class="footer">
-    </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p class="text-muted small">&copy; <span id="year"></span> Hwang Lab</p>
+      </div>
+    </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-1.11.3.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+      // Auto‑update footer year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
